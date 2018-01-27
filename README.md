@@ -1,1 +1,9 @@
-# nyunix
+# Nyunix - next generation unix
+## The Purpose of Nyunix
+The Unix Operating System is a very congenial invention, especially its abstract idea of "everything is a file" and "keep it simple, stupid". However, it's concrete implementation in the various Unix systems and the GNU system might leave something to be desired. The GNU system started out to be an exact reimplementation of Unix and might have aquired a lot of cruft, with a lot of options doubling in the various command line utilities. And nowadays the choice of C as the implementation language might have to be reconsidered. 
+
+On the other hand, the philosophy behind GNU based on the ideas of Richard Stallman are quite independent of the actual implementation. And a lot of good ideas and good software directly come from the GNU project itself. A reimplementation of Unix might therefore use a lot of those components created by the GNU project, as well as sharing the basic philosophy showing in the use of the GPL. 
+
+Then, there are personal decisions for a certain software. I, for my part, prefer the vi editor to emacs. I might as well not agree with a certain inflation of different extension language, as is the case with guile, the so-called official gnu extension on the one hand, and emacs lisp on the other hand. Then we might like to see glib used much more in a reimplementation of Unix as an object oriented programming layer. 
+
+Therefore, we would like to announce here a new software project, a reimplementation of an operation system based on Unix's proven principles as outlined in Eric S. Raymond's book "The Art of Unix Programming". But we would like to base our work on already proven components. We will use the Linux kernel and rebuild on top of it a userland based on Unix principles. We will use components of the GNU system, such as glib. But we will prefer higher level languages instead of reprogramming everything in the C language. By higher level language we do however not mean dynamic languages, but languages with still static, but implicit typing. Their advantages in building larger software systems over dynamic languages we take for granted. 
